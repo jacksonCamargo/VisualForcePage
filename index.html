@@ -1,198 +1,189 @@
 <head>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- <link href="/capanhaTotsBlackFriday.css" rel="stylesheet"> -->
-  <script src="./teste.js"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- <link href="/capanhaTotsBlackFriday.css" rel="stylesheet"> -->
+<script src="./teste.js"></script>
 
 </head>
 <apex:outputPanel class="principal">
 <apex:outputPanel class="container-fluid" class="float-sm-start">
 
-  <!-- imagem black friday -->
-  <img class="imgs"
-    src="https://s2.glbimg.com/qJ3e8vVU5R3v5cjswPEEvhbYG3Y=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/T/B/E8KGr9RjedCxd1TuMW3Q/gettyimages-1185222353.jpg"
-    width="500px" /><br><br>
+<!-- imagem black friday -->
+<img class="imgs"
+  src="https://s2.glbimg.com/qJ3e8vVU5R3v5cjswPEEvhbYG3Y=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2020/T/B/E8KGr9RjedCxd1TuMW3Q/gettyimages-1185222353.jpg"
+  width="500px" /><br><br>
 
-  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-  <!-- INICIO DO FORMULARIO -->
-  <form class="forms" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<!-- INICIO DO FORMULARIO -->
+<form class="forms" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-    <input class="forms" class="forms" type="hidden" name="oid" value="00D8b000002bvdu">
-    <input class="forms" class="forms" type="hidden" name="retURL"
-      value="https://produto.mercadolivre.com.br/MLB-2772793137-caneca-toda-sua-ideia-estampada-aqui-toys-sublis-_JM">
+  <input class="forms" class="forms" type="hidden" name="oid" value="00D8b000002bvdu">
+  <input class="forms" class="forms" type="hidden" name="retURL"
+    value="https://produto.mercadolivre.com.br/MLB-2772793137-caneca-toda-sua-ideia-estampada-aqui-toys-sublis-_JM">
 
-    <h1 class="titulo1">Toys Sublimação</h1>
+  <h1 class="titulo1">Toys Sublimação</h1>
 
-    <form class="needs-validation" novalidate>
-      <apex:outputPanel class="form-row">
+  <form class="needs-validation" novalidate>
+    <apex:outputPanel class="form-row">
+      <apex:outputPanel class="col-md-4 mb-3">
+        <label for="first_name">Primeiro Nome</label>
+        <input type="text" class="form-control" id="first_name" name="last_name" placeholder="joao" required>
+
+      </apex:outputPanel>
+      <apex:outputPanel class="col-md-4 mb-3">
+        <label for="last_name">Sobre Nome</label>
+        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="antonio" required>
+        <!-- <apex:outputPanel class="valid-feedback">
+                  Looks good!
+                </apex:outputPanel>
+              </apex:outputPanel>    -->
         <apex:outputPanel class="col-md-4 mb-3">
-          <label for="first_name">Primeiro Nome</label>
-          <input type="text" class="form-control" id="first_name" name="last_name" placeholder="joao" required>
-
-        </apex:outputPanel>
-        <apex:outputPanel class="col-md-4 mb-3">
-          <label for="last_name">Sobre Nome</label>
-          <input type="text" class="form-control" id="last_name" name="last_name" placeholder="antonio" required>
+          <label for="email">Email:</label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="joao123@bbol.com" required>
           <!-- <apex:outputPanel class="valid-feedback">
-                    Looks good!
-                  </apex:outputPanel>
-                </apex:outputPanel>    -->
-          <apex:outputPanel class="col-md-4 mb-3">
-            <label for="email">Email:</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="joao123@bbol.com" required>
-            <!-- <apex:outputPanel class="valid-feedback">
-                    Looks good!
-                  </apex:outputPanel> -->
-          </apex:outputPanel>
-          <apex:outputPanel class="col-md-4 mb-3">
-            <label for="phone">CELULAR:</label>
-            <input type="text" class="form-control" id="phone" name="phone" placeholder="(11)54549090" required>
-            <!-- <apex:outputPanel class="valid-feedback">
-                    Looks good!
-                  </apex:outputPanel> -->
-          </apex:outputPanel>
-          <label class="forms"></label>
-          <label for="description" heigth="400px">Comentarios</label>
-          <apex:outputPanel class="col-md-4 mb-3">
-            <textarea class="form-control" placeholder="BLACK É NA TOYS " id="description"
-              name="description"></textarea><br>
-
-          </apex:outputPanel>
+                  Looks good!
+                </apex:outputPanel> -->
+        </apex:outputPanel>
+        <apex:outputPanel class="col-md-4 mb-3">
+          <label for="phone">CELULAR:</label>
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="(11)54549090" required>
+          <!-- <apex:outputPanel class="valid-feedback">
+                  Looks good!
+                </apex:outputPanel> -->
+        </apex:outputPanel>
+        <label class="forms"></label>
+        <label for="description" heigth="400px">Comentarios</label>
+        <apex:outputPanel class="col-md-4 mb-3">
+          <textarea class="form-control" placeholder="BLACK É NA TOYS " id="description"
+            name="description"></textarea><br>
 
         </apex:outputPanel>
-        <button class="btn btn-primary" type="submit" onclick="successMensagem()">QUERO MINHA BLACK</button>
-    </form>
 
-    <!-- FIGURAS EM TELA -->
-    <figure class="box-figure">
-      <img class="box-figure-item-left" src="./WhatsApp Image 2022-08-25 at 13.41.27 (1).jpeg" width="300px"
-        alt="caneca-dragon ball">
-      <img class="box-figure-item-left" src="./WhatsApp Image 2022-08-25 at 13.41.27 (2).jpeg" width="300px"
-        alt="Boruto">
-      <img class="box-figure-item-rigth" src="./WhatsApp Image 2022-08-25 at 13.41.27 (3).jpeg" width="300px"
-        alt="Naruto">
-      <img class="box-figure-item-rigth" src="./WhatsApp Image 2022-08-25 at 13.41.27.jpeg" width="300px"
-        alt="Cavaleiros">
-    </figure>
-    <div class="footer_rodape">
-      <!-- <footer class="rodape">&copy; Toys Sublimacao - é a nossa experiência</footer> -->
-    </div>
+      </apex:outputPanel>
+      <button class="btn btn-primary" type="submit" onclick="successMensagem()">QUERO MINHA BLACK</button>
+  </form>
+
+  <!-- FIGURAS EM TELA -->
+  <figure class="box-figure">
+    <img class="box-figure-item-left" src="./WhatsApp Image 2022-08-25 at 13.41.27 (1).jpeg" width="300px"
+      alt="caneca-dragon ball">
+    <img class="box-figure-item-left" src="./WhatsApp Image 2022-08-25 at 13.41.27 (2).jpeg" width="300px"
+      alt="Boruto">
+    <img class="box-figure-item-rigth" src="./WhatsApp Image 2022-08-25 at 13.41.27 (3).jpeg" width="300px"
+      alt="Naruto">
+    <img class="box-figure-item-rigth" src="./WhatsApp Image 2022-08-25 at 13.41.27.jpeg" width="300px"
+      alt="Cavaleiros">
+  </figure>
+      <footer class="rodape">&copy; Toys Sublimacao - é a nossa experiência</footer>
+  
+  <style>      
+    /* principal container */
+    .container-fluid {
+      background-color: black;
+      /* position: relative; */
+      position: absolute;
+      width: 80vh;
+      height: 125vh;
+      margin-top: 70px;
+      margin-left: 400px;
+      box-shadow: 0px 0px 0px 10px;
+      /* color: aliceblue; */
+    }
+    .principal{
+      background-color: brown;
+      position: absolute;
+      width: 205vh;
+      height: 60vh;   
+      box-shadow: 0px 2px 600px 0px;
+    }
+
+    label.forms {}
+
+    /* item dos container principal */
+
+    .forms {
+      top: 200px;
+      left: 280px;
+      color: red;
+
+      /* position: relative;  */
+      /* position: absolute;    */
+
+      /* display: inline-block; */
+      width: 500px;
+      height: 10px;
+    }
+
+    button.btn-primary {
+      background-color: green;
+      border-radius: 9px;
+      width: 200px;
+      margin-left: 150px;
+
+    }
+
+    h1 {
+      color: white;
+      box-shadow: 5px -5px 5px 1px red;
+      text-align: center;
+      border-radius: 100%;
+      margin-top: -23px;
+      font-size: 40px;
+    }
+    figure {
+      border: 20px 5px solid black;
+      width: none;
+      height: none;
+      padding-top: 0px;
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content:center;
+    }
+
+    .box-figure-item-left {
+
+      margin-left: 10;
+      border-radius: 15px;
+    }
+
+    .box-figure-item-rigth {
+
+      margin-bottom: 0px;
+      border-radius: 15px;
+      margin-left: 10;
+      border-radius: 15px;
+    }
+
+    img {
+
+      top: 0px;
+      left:px;
+      /*position: absolute*/
+    }
+
+    footer {
+      text-align: center;
+      margin: auto;
+      border: solid 1px;
+    }
    
-    
-    <style>      
 
-      /* principal container */
+    textarea.forms {
+      color: blanchedalmond;
+    }
+  </style>
 
-      .container-fluid {
-        background-color: black;
-        /* position: relative; */
-        position: absolute;
-        width: 80vh;
-        height: 125vh;
-        margin-top: 70px;
-        margin-left: 400px;
-        box-shadow: 0px 0px 0px 10px;
-        /* color: aliceblue; */
-      }
-      .principal{
-        background-color: brown;
-        position: absolute;
-        width: 205vh;
-        height: 60vh;   
-        box-shadow: 0px 2px 600px 0px;
-      }
+  <script>
+    // alert("ola")
+    function successMensagem() {
+      alert("sua mensagen foi enviada com sucesso ! em breve entraremos em contato.obrigado! ")
+    }
 
-      label.forms {}
-
-      /* item dos container principal */
-
-      .forms {
-        top: 200px;
-        left: 280px;
-        color: red;
-
-        /* position: relative;  */
-        /* position: absolute;    */
-
-        /* display: inline-block; */
-        width: 500px;
-        height: 10px;
-      }
-
-      button.btn-primary {
-        background-color: green;
-        border-radius: 9px;
-        width: 200px;
-        margin-left: 150px;
-
-      }
-
-      h1 {
-        color: white;
-        box-shadow: 5px -5px 5px 1px red;
-        text-align: center;
-        border-radius: 100%;
-        margin-top: -23px;
-        font-size: 40px;
-      }
-      figure {
-        border: 20px 5px solid black;
-        width: none;
-        height: none;
-        padding-top: 0px;
-        margin-top: 80px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content:center;
-      }
-
-      .box-figure-item-left {
-
-        margin-left: 10;
-        border-radius: 15px;
-      }
-
-      .box-figure-item-rigth {
-
-        margin-bottom: 0px;
-        border-radius: 15px;
-        margin-left: 10;
-        border-radius: 15px;
-      }
-
-      img {
-
-        top: 0px;
-        left:px;
-        /*position: absolute*/
-      }
-
-      footer {
-        text-align: center;
-        margin: 10px;
-      }
-      .footer_rodape{
-        background-color:rgb(55, 52, 52);
-        margin: 100%;
-        
-      }
-
-      textarea.forms {
-        color: blanchedalmond;
-      }
-    </style>
-
-    <script>
-      // alert("ola")
-      function successMensagem() {
-        alert("sua mensagen foi enviada com sucesso ! em breve entraremos em contato.obrigado! ")
-      }
-
-
-    </script>
+  </script>
 
 </apex:outputPanel>
 </apex:outputPanel>
