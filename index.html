@@ -76,9 +76,11 @@
       <img class="box-figure-item-rigth" src="./WhatsApp Image 2022-08-25 at 13.41.27.jpeg" width="300px"
         alt="Cavaleiros">
     </figure>
-
-
-    <footer class="rodape">&copy; Toys Sublimacao - é a nossa experiência</footer>
+    <div class="footer_rodape">
+      <footer class="rodape">&copy; Toys Sublimacao - é a nossa experiência</footer>
+    </div>
+   
+    
     <style>
       @media only screen and (max-device-width: 900px) {
         /* .menu { width:100%; } */
@@ -92,7 +94,7 @@
         position: absolute;
         width: 80vh;
         height: 130vh;
-        margin-top: 30px;
+        margin-top: 70px;
         margin-left: 400px;
         box-shadow: 0px 0px 0px 10px;
         /* color: aliceblue; */
@@ -102,16 +104,15 @@
         position: absolute;
         width: 850vh;
         height: 60vh;   
-        box-shadow: 0px 0px 0px 0px;
+        box-shadow: 0px 2px 600px 0px;
       }
-
 
       label.forms {}
 
       /* item dos container principal */
 
       .forms {
-        top: 300px;
+        top: 200px;
         left: 280px;
         color: red;
 
@@ -139,11 +140,36 @@
         margin-top: -23px;
         font-size: 40px;
       }
+      figure {
+        border: 20px 5px solid black;
+        width: none;
+        height: none;
+        padding-top: 0px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content:center;
+      }
+
+      .box-figure-item-left {
+
+        margin-left: 10;
+        border-radius: 15px;
+      }
+
+      .box-figure-item-rigth {
+
+        margin-bottom: 0px;
+        border-radius: 15px;
+        margin-left: 10;
+        border-radius: 15px;
+      }
 
       img {
 
-        top: 100px;
-        left: 6px;
+        top: 0px;
+        left:px;
         /*position: absolute*/
       }
 
@@ -151,13 +177,15 @@
         text-align: center;
         margin: 10px;
       }
+      .footer_rodape{
+        background-color:rgb(55, 52, 52);
+        
+      }
 
       textarea.forms {
         color: blanchedalmond;
       }
     </style>
-
-
 
     <script>
       // alert("ola")
